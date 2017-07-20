@@ -1,0 +1,18 @@
+[user]
+	name = yammmt
+	email = my-email-addr
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = auto
+[core]
+	precomposeunicode = true
+	editor = nano
+	autocrlf = false
+[push]
+	default = matching
+[merge]
+	ff = false
+[pull]
+	ff = only
