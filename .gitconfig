@@ -24,6 +24,8 @@
 	gr = log --graph --decorate
 	b = branch
 	cm = commit
+	last = log --graph --decorate -p -1
+	pp = pull --prune
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
