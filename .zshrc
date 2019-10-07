@@ -29,7 +29,9 @@ alias gol="git log --oneline"
 alias gpp="git pull --prune"
 alias gpu="git push"
 alias gpuf="git push -f"
+alias grestore="git restore"
 alias gst="git status"
+alias gsw="git switch"
 
 alias l="ls -alh"
 
