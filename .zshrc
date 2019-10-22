@@ -21,19 +21,26 @@ alias firefox="open -a Firefox"
 alias g="git"
 alias ga="git add"
 alias gap="git add -p"
+alias gb="git branch"
 alias gcm="git commit"
 alias gco="git checkout"
 alias gd="git diff"
+alias ggr="git log --graph --decorate"
+alias ggrep="git grep -n"
 alias gl="git log"
 alias gol="git log --oneline"
 alias gpp="git pull --prune"
 alias gpu="git push"
 alias gpuf="git push -f"
 alias grestore="git restore"
+alias gshow="git show"
 alias gst="git status"
+alias gstash="git stash"
 alias gsw="git switch"
 
 alias l="ls -alh"
+
+alias pm="python manage.py"
 
 ### peco
 function peco-select-history() {
