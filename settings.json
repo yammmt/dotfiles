@@ -1,0 +1,25 @@
+// 既定の設定を上書きするには、このファイル内に設定を挿入します
+{
+    "files.autoGuessEncoding": true,
+    "workbench.colorTheme": "TronLegacy",
+    "editor.renderWhitespace": "all",
+    "editor.wordWrap": "on",
+    "editor.renderIndentGuides": true,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Fira Code",
+    "python.pythonPath": "/usr/local/bin/python3",
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "editor.rulers": [
+        { "column": 80, "color": "dimgray" },
+        { "column": 100, "color": "maroon" }
+    ],
+    "gitlens.historyExplorer.enabled": true,
+    "editor.fontSize": 14,
+    "sync.gist": "023d8e0aa049fb3dab6813a330168150",
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.dontShowNewVersionMessage": true,
+}
