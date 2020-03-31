@@ -11,6 +11,7 @@
 	editor = nano
 	autocrlf = false
 	quotepath = false
+	excludesfile = /Users/masayama/.gitignore_global
 [push]
 	default = matching
 [merge]
@@ -26,6 +27,9 @@
 	cm = commit
 	last = log --graph --decorate -p -1
 	pp = pull --prune
+	d = diff
+	a = add
+	ol = log --oneline
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
