@@ -1,7 +1,7 @@
 // 既定の設定を上書きするには、このファイル内に設定を挿入します
 {
     "files.autoGuessEncoding": true,
-    "workbench.colorTheme": "TronLegacy",
+    "workbench.colorTheme": "Noctis Azureus",
     "editor.renderWhitespace": "all",
     "editor.wordWrap": "on",
     "editor.renderIndentGuides": true,
@@ -22,4 +22,13 @@
     "gitlens.views.lineHistory.enabled": true,
     "workbench.iconTheme": "vscode-icons",
     "vsicons.dontShowNewVersionMessage": true,
+    "rust.rustup": {
+        "toolchain": "stable-x86_64-apple-darwin",
+        "nightlyToolchain": "nightly-x86_64-apple-darwin"
+    },
+    "rust.mode": "rls",
+    "rust.rls": {
+        "useRustfmt": true
+    },
+    "window.zoomLevel": 2,
 }
