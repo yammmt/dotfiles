@@ -1,6 +1,7 @@
 [user]
 	name = yammmt
 	email = cu.cs.y20@gmail.com
+	signingkey = B4EE4EA3
 [color]
 	diff = auto
 	status = auto
@@ -35,3 +36,7 @@
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
+[gpg]
+	program = gpg2
+[commit]
+	gpgsign = true

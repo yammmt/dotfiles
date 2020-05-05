@@ -28,6 +28,7 @@ alias gd="git diff"
 alias gf="git fetch"
 alias ggr="git log --graph --decorate"
 alias ggrep="git grep -n"
+alias ggrp="git log --graph --decorate --pretty=fuller"
 alias gl="git log"
 alias gol="git log --oneline"
 alias gpp="git pull --prune"
@@ -41,7 +42,10 @@ alias gst="git status"
 alias gstash="git stash"
 alias gsw="git switch"
 
-alias l="ls -alh"
+# alias l="ls -alh"
+# alias l="exa -alFh"
+alias l="lsd -alF"
+alias ls="lsd"
 
 alias pm="python manage.py"
 
@@ -79,10 +83,6 @@ export PATH="$RBENV_ROOT/bin:$PATH"
 eval "$(rbenv init -)"
 
 export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
-
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
