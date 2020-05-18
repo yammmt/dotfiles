@@ -13,6 +13,7 @@
 	autocrlf = false
 	quotepath = false
 	excludesfile = /Users/masayama/.gitignore_global
+	commentChar = ";"
 [push]
 	default = matching
 [merge]
