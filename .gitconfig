@@ -17,9 +17,10 @@
 [push]
 	default = matching
 [merge]
-	ff = false
+	ff = only
 [pull]
 	ff = only
+	rebase = merges
 [alias]
 	br = branch
 	st = status
@@ -32,6 +33,7 @@
 	d = diff
 	a = add
 	ol = log --oneline
+	m = merge
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
