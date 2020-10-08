@@ -14,6 +14,7 @@
 	quotepath = false
 	excludesfile = /Users/masayama/.gitignore_global
 	commentChar = ";"
+	pager = delta
 [push]
 	default = matching
 [merge]
@@ -47,3 +48,10 @@
 	helper = osxkeychain
 [init]
 	defaultBranch = main
+[delta]
+	plus-color = "#012800"
+	minus-color = "#340001"
+	syntax-theme = Monokai Extended
+[interactive]
+	diffFilter = delta --color-only
+

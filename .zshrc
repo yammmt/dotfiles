@@ -16,10 +16,11 @@ alias bxr="bundle exec rails"
 alias br="bin/rails"
 alias brs="bin/rails s"
 
-alias ca="cargo"
-alias cab="cargo b"
+alias c="cargo"
+alias cb="cargo b"
 alias cac="cargo c"
-alias car="cargo r"
+alias cr="cargo r"
+alias ct="cargo t"
 
 alias firefox="open -a Firefox"
 
