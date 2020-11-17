@@ -19,6 +19,7 @@ alias brs="bin/rails s"
 alias c="cargo"
 alias cb="cargo b"
 alias cac="cargo c"
+alias cat="cargo atcoder"
 alias cr="cargo r"
 alias ct="cargo t"
 
