@@ -16,7 +16,7 @@
 	commentChar = ";"
 	pager = delta
 [push]
-	default = matching
+	default = current
 [merge]
 	ff = only
 [pull]

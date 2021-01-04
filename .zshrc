@@ -20,8 +20,12 @@ alias c="cargo"
 alias cb="cargo b"
 alias cac="cargo c"
 alias cat="cargo atcoder"
+alias cats="cargo atcoder submit"
+alias catt="cargo atcoder test"
 alias cr="cargo r"
+alias crr="cargo r --release"
 alias ct="cargo t"
+alias ctr="cargo t --release"
 
 alias firefox="open -a Firefox"
 
@@ -96,3 +100,4 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 export RUST_BACKTRACE=1
+
