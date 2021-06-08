@@ -11,10 +11,15 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 ### alias
+
+#### Ruby
+
 alias bx="bundle exec"
-alias bxr="bundle exec rails"
+alias bxr="bundle exec ruby"
 alias br="bin/rails"
 alias brs="bin/rails s"
+
+#### Rust
 
 alias c="cargo"
 alias cb="cargo b"
@@ -31,7 +36,7 @@ alias crr="cargo r --release"
 alias ct="cargo t"
 alias ctr="cargo t --release"
 
-alias firefox="open -a Firefox"
+#### Git
 
 alias g="git"
 alias ga="git add"
@@ -61,11 +66,11 @@ alias gst="git status"
 alias gstash="git stash"
 alias gsw="git switch"
 
-# alias l="ls -alh"
-# alias l="exa -alFh"
+#### Others
+
+alias firefox="open -a Firefox"
 alias l="lsd -alF"
 alias ls="lsd"
-
 alias pm="python manage.py"
 
 ### peco
@@ -103,7 +108,6 @@ eval "$(rbenv init -)"
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+eval "$(pyenv init --path)"
 
 export RUST_BACKTRACE=1
-

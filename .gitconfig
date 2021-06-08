@@ -12,7 +12,6 @@
 	editor = nano
 	autocrlf = false
 	quotepath = false
-	excludesfile = /Users/masayama/.gitignore_global
 	commentChar = ";"
 	pager = delta
 [push]
