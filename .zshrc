@@ -17,7 +17,9 @@ fi
 alias bx="bundle exec"
 alias bxr="bundle exec ruby"
 alias br="bin/rails"
+alias brc="bin/rails c"
 alias brs="bin/rails s"
+alias brt="bin/rails t"
 
 #### Rust
 
