@@ -49,7 +49,5 @@
 	defaultBranch = main
 [delta]
     line-numbers = true
-	plus-color = "#00EE03"
-	minus-color = "#340001"
 	syntax-theme = Monokai Extended
 
