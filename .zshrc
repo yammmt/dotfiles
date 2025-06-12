@@ -75,6 +75,7 @@ alias ggo="git log --graph --oneline"
 alias ggr="git log --graph --decorate"
 alias ggrep="git grep -n"
 alias ggrp="git log --graph --decorate --pretty=fuller"
+alias ggw="git whatchanged --graph --oneline"
 alias gl="git log"
 alias glast="git log -1 --oneline"
 alias glp="git log --pretty=fuller"
@@ -119,6 +120,15 @@ alias gswb="git switch -"
 alias gswc="git switch -c"
 alias gt="git tag"
 alias gtl="git tag --list"
+alias gw="git worktree"
+alias gwa="git worktree add"
+alias gwt="git worktree"
+alias gwta="git worktree add"
+
+#### dotnet
+
+alias db="dotnet build"
+alias dr="dotnet run"
 
 #### Others
 
