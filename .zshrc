@@ -149,6 +149,9 @@ alias l="lsd -alF"
 alias ls="lsd"
 alias pm="python manage.py"
 
+alias pl="pahcer list"
+alias pr="pahcer run"
+
 ### peco
 function peco-select-history() {
     local tac
