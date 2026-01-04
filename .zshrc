@@ -6,8 +6,10 @@
 #
 
 ### Source Prezto.
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+if [[ "$TERM_PROGRAM" != "vscode" ]]; then
+  if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+    source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+  fi
 fi
 
 ### alias
@@ -61,6 +63,7 @@ alias gcpc="git cherry-pick --continue"
 alias gd="git diff"
 alias gdc="git diff --cached"
 alias gdci="git diff --cached --ignore-space-change"
+alias gdcs="git diff --cached --stat"
 alias gdi="git diff --ignore-space-change"
 alias gds="git diff --staged"
 alias gdst="git diff --stat"
@@ -166,8 +169,10 @@ function peco-select-history() {
     CURSOR=$#BUFFER
     zle clear-screen
 }
-zle -N peco-select-history
-bindkey '^r' peco-select-history
+if [[ -o interactive && -t 0 ]]; then
+  zle -N peco-select-history
+  bindkey '^r' peco-select-history
+fi
 
 ### hyper-tab-icons
 precmd() {
@@ -186,10 +191,7 @@ export PATH="$RBENV_ROOT/bin:$PATH"
 eval "$(rbenv init -)"
 
 # https://github.com/pyenv/pyenv/issues/1740#issuecomment-738749988
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
-# eval "$(pyenv virtualenv-init -)"
+eval "$(pyenv init -)"
 
 # hide because I can't compile c++ but I'm not sure
 # export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib"
@@ -201,7 +203,15 @@ export RUST_BACKTRACE=1
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
 
-# Added by Windsurf
-export PATH="/Users/yammmt/.codeium/windsurf/bin:$PATH"
+# Rust
+export PATH="$HOME/.cargo/bin:$PATH"
 
-. "$HOME/.local/bin/env"
+# what
+# . "$HOME/.local/bin/env"
+
+# uv etc.
+export PATH="$HOME/.local/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

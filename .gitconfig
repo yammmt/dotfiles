@@ -9,7 +9,7 @@
 	ui = auto
 [core]
 	precomposeunicode = true
-	editor = nano
+	editor = vim
 	autocrlf = false
 	quotepath = false
 	commentChar = ";"
@@ -58,3 +58,7 @@
     cmd = difft "$LOCAL" "$REMOTE"
 [pager]
     difftool = true
+[help]
+	format = web
+[rerere]
+	enabled = true
