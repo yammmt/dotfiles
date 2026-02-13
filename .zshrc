@@ -44,6 +44,7 @@ alias cchk="cargo check"
 alias cr="cargo r"
 alias crr="cargo r --release"
 alias ct="cargo t"
+alias ctd="cargo tauri dev"
 alias ctr="cargo t --release"
 
 #### Git
@@ -146,7 +147,7 @@ alias dr="dotnet run"
 
 #### Others
 
-alias cda="cd ~/git/atcoder/v1.70.0/"
+alias cda="cd ~/git/atcoder/v1.89.0/"
 alias firefox="open -a Firefox"
 alias l="lsd -alF"
 alias ls="lsd"
