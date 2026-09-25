@@ -82,6 +82,7 @@ alias ggo="git log --graph --oneline"
 alias ggr="git log --graph --decorate"
 alias ggrep="git grep -n"
 alias ggrp="git log --graph --decorate --pretty=fuller"
+alias ggrpp="git log --graph --decorate --pretty=fuller -p"
 alias ggw="git log --raw --graph --oneline"
 alias ggw4="git log --raw --graph --oneline -4"
 alias ggw7="git log --raw --graph --oneline -7"
@@ -129,6 +130,7 @@ alias gsb="git show-branch"
 alias gsh="git show --notes --pretty=fuller"
 alias gshst="git show --stat"
 alias gshow="git show --notes"
+alias gs="git status"
 alias gst="git status"
 alias gstash="git stash"
 alias gstasha="git stash apply"
@@ -146,6 +148,8 @@ alias gw="git worktree"
 alias gwa="git worktree add"
 alias gwt="git worktree"
 alias gwta="git worktree add"
+alias gwtl="git worktree list"
+alias gwtrm="git worktree remove"
 
 #### dotnet
 
@@ -223,3 +227,13 @@ export PATH="$HOME/.local/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# The next lines updates PATH for the Google Cloud SDK.
+if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then
+  source "$HOME/google-cloud-sdk/path.zsh.inc"
+fi
+
+# The next lines enables shell command completion for gcloud.
+if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then
+  source "$HOME/google-cloud-sdk/completion.zsh.inc"
+fi
